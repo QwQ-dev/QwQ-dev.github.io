@@ -19,7 +19,7 @@
 
 1. 克隆项目：
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/QwQ-dev/QwQ-dev.github.io.git
    ```
 2. 打开 `index.html` 文件查看网站。
 
