@@ -724,6 +724,7 @@ footer p {
     border-radius: 13px;
     position: relative;
     opacity: 0.8;
+    top: 10px;
 }
 
 .mouse::before {
@@ -734,7 +735,7 @@ footer p {
     background: var(--highlight);
     left: 50%;
     transform: translateX(-50%);
-    top: 6px;
+    top: 10px;
     border-radius: 2px;
     animation: scrollAnim 2s infinite;
 }
