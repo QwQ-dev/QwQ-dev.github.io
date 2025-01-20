@@ -105,7 +105,7 @@ window.addEventListener('scroll', function () {
 });
 
 // 语言切换功能
-let currentLang = 'zh';
+let currentLang = 'en';
 
 function switchLanguage(lang) {
     if (!window.translations || !window.translations[lang]) {
@@ -135,7 +135,7 @@ function switchLanguage(lang) {
 // 初始化语言
 function initializeLanguage() {
     // 检查是否有保存的语言偏好
-    const savedLang = localStorage.getItem('preferred-language') || 'zh';
+    const savedLang = localStorage.getItem('preferred-language') || 'en';
     switchLanguage(savedLang);
 
     // 添加语言切换按钮事件监听
