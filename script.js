@@ -103,3 +103,53 @@ window.addEventListener('scroll', function () {
     }
     lastScrollTop = scrollTop; // 更新上一次的滚动位置
 });
+
+// 语言切换功能
+let currentLang = 'zh';
+
+function switchLanguage(lang) {
+    if (!window.translations || !window.translations[lang]) {
+        console.error('Translations not loaded!');
+        return;
+    }
+
+    currentLang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (window.translations[lang][key]) {
+            element.textContent = window.translations[lang][key];
+        } else {
+            console.warn(`Translation missing for key: ${key} in language: ${lang}`);
+        }
+    });
+
+    // 更新按钮状态
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    // 保存语言偏好
+    localStorage.setItem('preferred-language', lang);
+}
+
+// 初始化语言
+function initializeLanguage() {
+    // 检查是否有保存的语言偏好
+    const savedLang = localStorage.getItem('preferred-language') || 'zh';
+    switchLanguage(savedLang);
+
+    // 添加语言切换按钮事件监听
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            switchLanguage(lang);
+        });
+    });
+}
+
+// 确保在 DOM 和翻译加载完成后初始化
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeLanguage);
+} else {
+    initializeLanguage();
+}

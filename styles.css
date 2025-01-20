@@ -703,7 +703,7 @@ footer p {
 /* 调整滚动提示位置 */
 .scroll-indicator {
     position: absolute;
-    bottom: 3rem;
+    bottom: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.6;
@@ -716,7 +716,7 @@ footer p {
     margin-bottom: 10rem;
 }
 
-/* 优化鼠标动画样式 */
+/* 调整鼠标动画样式 */
 .mouse {
     width: 26px;
     height: 40px;
@@ -844,4 +844,48 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(100, 255, 218, 0.3);
+}
+
+/* 语言切换按钮样式 */
+.language-switch {
+    position: fixed;
+    right: 2rem;
+    top: 1.5rem;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.language-btn {
+    padding: 0.5rem 1rem;
+    background: rgba(100, 255, 218, 0.05);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    border-radius: 15px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.language-btn:hover {
+    background: rgba(100, 255, 218, 0.1);
+    transform: translateY(-2px);
+}
+
+.language-btn.active {
+    background: var(--highlight);
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .language-switch {
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .language-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
 }
