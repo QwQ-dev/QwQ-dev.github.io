@@ -9,7 +9,7 @@ window.translations = {
         "about.title": "专业历程",
         "about.role1": "LegacyLands 核心开发者",
         "about.role1.date": "2024 - 现在",
-        "about.role1.desc": "主导开发 legacy-lands-library，一个基于 Fairy Framework 的高性能 Minecraft 插件开发框架。项目获得 200+ stars 与 39+ forks，显著简化了 Folia 插件开发流程。",
+        "about.role1.desc": "主导开发 legacy-lands-library，一个基于 Fairy Framework 的高性能 Minecraft 插件开发框架。项目获得 460+ stars 与 80+ forks，显著简化了 Minecraft 插件开发流程。",
         "about.role2": "开源项目贡献者",
         "about.role2.date": "2024 - 现在",
         "about.role2.desc": "参与多个 Minecraft 相关开源项目的本地化工作，包括 CMI、Slimefun 等插件的翻译。致力于为中文用户提供更好的使用体验，推动社区本地化发展。",
@@ -37,7 +37,7 @@ window.translations = {
         "skills.direction.tag3": "性能优化",
         "skills.direction.tag4": "插件开发",
         "skills.direction.tag5": "系统架构",
-        "footer.quote": "\"编码之路，梦想成真\" | 超越平凡 — QwQ-dev"
+        "footer.quote": "\"热爱我所做的事情。就是这样。\" — QwQ-dev"
     },
     en: {
         "nav.explore": "Explore",
@@ -49,7 +49,7 @@ window.translations = {
         "about.title": "Professional Journey",
         "about.role1": "LegacyLands Core Developer",
         "about.role1.date": "2024 - Present",
-        "about.role1.desc": "Led the development of legacy-lands-library, a high-performance Minecraft plugin development framework based on Fairy Framework. The project has gained 200+ stars and 39+ forks, significantly simplifying Folia plugin development.",
+        "about.role1.desc": "Led the development of legacy-lands-library, a high-performance Minecraft plugin development framework based on Fairy Framework. The project has gained 480+ stars and 80+ forks, significantly simplifying Minecraft plugin development.",
         "about.role2": "Open Source Contributor",
         "about.role2.date": "2024 - Present",
         "about.role2.desc": "Contributing to multiple Minecraft-related open source projects' localization, including CMI and Slimefun plugins. Dedicated to improving Chinese users' experience and promoting community localization.",
@@ -77,6 +77,6 @@ window.translations = {
         "skills.direction.tag3": "Performance Optimization",
         "skills.direction.tag4": "Plugin Development",
         "skills.direction.tag5": "System Architecture",
-        "footer.quote": "\"Walking the path of code, crafting dreams into reality\" | Beyond ordinary — QwQ-dev"
+        "footer.quote": "\"Loving what I do. Period.\" — QwQ-dev"
     }
 };
